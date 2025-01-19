@@ -484,13 +484,13 @@ Config.Locations = {
         clockInAndOut = {
             enabled = true,                        -- Enable clocking in and out at a set location? (If using ESX you must have a off duty job for each e.x. offpolice for police offsheriff for sheriff AND have grades for each pd grade - QBCORE REQUIRES NOTHING)
             jobLock = 'police',                    -- This must be set to which job will be utilizing (ESX MUST HAVE OFF DUTY JOB / GRADES FOR THIS - ex. offpolice or offsheriff)
-            coords = vec3(464.87, -977.37, 30.69), -- Location of where to go on and off duty(If not using target)
+            coords = vec3(441.91665, -981.9968, 30.689588), -- Location of where to go on and off duty(If not using target)
             label = '[E] - Go On/Off Duty',        -- Text to display(If not using target)
             distance = 3.0,                        -- Distance to display text UI(If not using target)
             target = {
                 enabled = true,                   -- If enabled, the location and distance above will be obsolete
                 label = 'Go On/Off Duty',
-                coords = vec3(464.87, -977.37, 30.69),
+                coords = vec3(441.91665, -981.9968, 30.689588),
                 heading = 91.06,
                 distance = 2.5,
                 width = 2.0,
@@ -503,14 +503,14 @@ Config.Locations = {
         bossMenu = {
             enabled = true,                        -- Enable boss menu?
             jobLock = 'police',                    -- Lock to specific police job? Set to false if not desired
-            coords = vec3(460.64, -985.64, 30.73), -- Location of boss menu (If not using target)
+            coords = vec3(461.40374, -986.1578, 30.791069), -- Location of boss menu (If not using target)
             label = '[E] - Access Boss Menu',      -- Text UI label string (If not using target)
             distance = 3.0,                        -- Distance to allow access/prompt with text UI (If not using target)
             target = {
                 enabled = true,                   -- If enabled, the location and distance above will be obsolete
                 label = 'Access Boss Menu',
-                coords = vec3(460.64, -985.64, 30.73),
-                heading = 269.85,
+                coords = vec3(461.40374, -986.1578, 30.791069),
+                heading = 179.00994,
                 distance = 2.0,
                 width = 2.0,
                 length = 1.0,
@@ -528,33 +528,32 @@ Config.Locations = {
             jobLock = 'police',                                                                          -- Allow only one of Config.policeJob listings / Set to false if allow all Config.policeJobs
             weapons = {
                 [0] = {                                                                                  -- Grade number will be the name of each table(this would be grade 0)
-                    { name = 'WEAPON_PISTOL',     label = 'Pistol',      multiple = false, price = 75 }, -- Set price to false if undesired
-                    { name = 'WEAPON_NIGHTSTICK', label = 'Night Stick', multiple = false, price = 50 },
-                    --  { name = 'ammo-9' , label = '9mm Ammo', multiple = true, price = 10 }, -- Set multiple to true if you want ability to purchase more than one at a time
-                    --  { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 100 }, -- Example
-
+                    { name = 'WEAPON_PISTOL_MK2',     label = 'PD Pistol',      multiple = false, price = 0 }, -- Set price to false if undesired
+                    { name = 'WEAPON_NIGHTSTICK', label = 'Night Stick', multiple = false, price = 0 },
+                    { name = 'ammo-9' , label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
+                    { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                 },
                 [1] = { -- This would be grade 1
-                    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', multiple = false, price = 150 },
-                    { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 50 },
-                    --  { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 10 }, -- Example
-                    --  { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 100 }, -- Example
+                    { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
+                    { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 0 },
+                    { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 },
+                    { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                 },
                 [2] = { -- This would be grade 2
-                    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', multiple = false, price = 150 },
-                    { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 50 },
-                    { name = 'WEAPON_ASSAULTRIFLE', label = 'Assault Rifle', multiple = false, price = 1100 },
-                    --  { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 10 }, -- Set multiple to true if you want ability to purchase more than one at a time
-                    --  { name = ammo-rifle, label = '5.56 Ammo', multiple = true, price = 20 }, -- Example
-                    --  { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 100 }, -- Example
+                    { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
+                    { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 0 },
+                    { name = 'WEAPON_CARBINERIFLE_MK2', label = 'PD AR', multiple = false, price = 0 },
+                    { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
+                    { name = 'ammo-rifle2', label = '7.62 Ammo', multiple = true, price = 0 }, -- Example
+                    { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 }, -- Example
                 },
                 [3] = { -- This would be grade 3
-                    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', multiple = false, price = 150 },
-                    { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 50 },
-                    { name = 'WEAPON_ASSAULTRIFLE', label = 'Assault Rifle', multiple = false, price = 1100 },
-                    --  { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 10 }, -- Set multiple to true if you want ability to purchase more than one at a time
-                    --  { name = ammo-rifle, label = '5.56 Ammo', multiple = true, price = 20 }, -- Example
-                    --  { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 100 }, -- Example
+                    { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
+                    { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 0 },
+                    { name = 'WEAPON_CARBINERIFLE_MK2', label = 'PD AR', multiple = false, price = 0 },
+                    { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
+                    { name = 'ammo-rifle2', label = '7.62 Ammo', multiple = true, price = 0 },
+                    { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                 },
             }
         },
@@ -562,7 +561,7 @@ Config.Locations = {
         cloakroom = {
             enabled = true,                        -- WILL NOT SHOW IN QBCORE INSTEAD USE QB-CLOTHING CONFIG! Set to false if you don't want to use (Compatible with esx_skin & wasabi fivem-appearance fork)
             jobLock = 'police',                    -- Allow only one of Config.policeJob listings / Set to false if allow all Config.policeJobs
-            coords = vec3(462.36, -999.62, 30.69), -- Coords of cloakroom
+            coords = vec3(462.88479, -996.6181, 30.689558), -- Coords of cloakroom
             label = '[E] - Change Clothes',        -- String of text ui of cloakroom
             range = 2.0,                           -- Range away from coords you can use.
             uniforms = {                           -- Uniform choices
@@ -573,11 +572,11 @@ Config.Locations = {
                         clothing = {
                             -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
                             -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 5,  texture = 2 }, -- Torso
+                            { component = 11, drawable = 55, texture = 0 }, -- Torso
                             { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 6,  texture = 1 }, -- Pants
-                            { component = 6,  drawable = 16, texture = 7 }, -- Shoes
-                            { component = 3,  drawable = 5,  texture = 0 }, -- Arms
+                            { component = 4,  drawable = 143, texture = 0 }, -- Pants
+                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
+                            { component = 3,  drawable = 19, texture = 0 }, -- Arms
                         },
                         props = {
                             -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
@@ -688,13 +687,13 @@ Config.Locations = {
         personalLocker = {
             enabled = true,                       -- Enable personal locker for this station?
             jobLock = 'police',                    -- Job lock?
-            coords = vec3(462.64, -995.88, 30.69), -- Area to prompt personal locker
+            coords = vec3(461.16854, -1000, 30.689596), -- Area to prompt personal locker
             range = 2.0,                           -- Range it will prompt from coords above
             label = '[E] - Access Personal Locker',
             target = {
                 enabled = true, -- If enabled, the location above will be obsolete
                 label = 'Access Personal Locker',
-                coords = vec3(462.64, -995.88, 30.69),
+                coords = vec3(461.16854, -1000, 30.689596),
                 heading = 354.94,
                 distance = 2.5,
                 width = 2.0,
@@ -707,13 +706,13 @@ Config.Locations = {
         evidenceLocker = {
             enabled = true,                      -- Enable evidence locker for this station?
             jobLock = 'police',                   -- Job lock?
-            coords = vec3(472.5, -991.21, 26.27), -- Area to prompt personal locker
+            coords = vec3(473.871, -990.6914, 26.27341), -- Area to prompt personal locker
             range = 2.0,                          -- Range it will prompt from coords above
             label = '[E] - Access Evidence Locker',
             target = {
                 enabled = true, -- If enabled, the location above will be obsolete
                 label = 'Access Evidence Locker',
-                coords = vec3(472.5, -991.21, 26.27),
+                coords = vec3(473.871, -990.6914, 26.27341),
                 heading = 266.23,
                 distance = 2.5,
                 width = 2.0,
@@ -728,80 +727,379 @@ Config.Locations = {
             enabled = true,                            -- Enable? False if you have you're own way for medics to obtain vehicles.
             jobLock = 'police',                        -- Job lock? or access to all police jobs by using false
             zone = {
-                coords = vec3(463.69, -1019.72, 28.1), -- Area to prompt vehicle garage
-                range = 5.5,                           -- Range it will prompt from coords above
+                coords = vec3(458.78906, -992.4506, 25.700021), -- Area to prompt vehicle garage
+                range = 2.5,                           -- Range it will prompt from coords above
                 label = '[E] - Access Garage',
                 return_label = '[E] - Return Vehicle'
             },
             spawn = {
                 land = {
-                    coords = vec3(449.37, -1025.46, 28.59), -- Coords of where land vehicle spawn/return
+                    coords = vec3(458.78906, -992.4506, 25.700021), -- Coords of where land vehicle spawn/return
                     heading = 3.68
                 },
                 air = {
-                    coords = vec3(449.29, -981.76, 43.69), -- Coords of where air vehicles spawn/return
-                    heading = 0.01
+                    coords = vec3(449.3514, -981.3118, 43.691329), -- Coords of where air vehicles spawn/return
+                    heading = 90.557632
                 }
             },
             options = {
 
-                [0] = {                    -- Job grade as table name
-                    ['police'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser',
-                        category = 'land', -- Options are 'land' and 'air'
+                [0] = { -- [Cadet]                      -- Job grade as table name
+                    ['nkstanier'] = {                   -- Car/Helicopter/Vehicle Spawn Code/Model Name
+                        label = 'Police Stanier',
+                        category = 'land',              -- Options are 'land' and 'air'
                     },
-                    ['police2'] = {        -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser #2',
-                        category = 'land', -- Options are 'land' and 'air'
-                    },
-                    ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Maverick',
-                        category = 'air',  -- Options are 'land' and 'air'
+                    ['nkbuffalos'] = {                  -- Car/Helicopter/Vehicle Spawn Code/Model Name
+                        label = 'Police Buffalo',
+                        category = 'land',              -- Options are 'land' and 'air'
                     },
                 },
 
-                [1] = {                    -- Job grade as table name
-                    ['police'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser',
-                        category = 'land', -- Options are 'land' and 'air'
+                [1] = { -- [Deputy I]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
                     },
-                    ['police2'] = {        -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser #2',
-                        category = 'land', -- Options are 'land' and 'air'
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
                     },
-                    ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Maverick',
-                        category = 'air',  -- Options are 'land' and 'air'
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
                     },
-                },
-
-                [2] = {                    -- Job grade as table name
-                    ['police'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser',
-                        category = 'land', -- Options are 'land' and 'air'
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
                     },
-                    ['police2'] = {        -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser #2',
-                        category = 'land', -- Options are 'land' and 'air'
-                    },
-                    ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Maverick',
-                        category = 'air',  -- Options are 'land' and 'air'
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
                     },
                 },
 
-                [3] = {                    -- Job grade as table name
-                    ['police'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser',
-                        category = 'land', -- Options are 'land' and 'air'
+                [2] = { -- [Deputy II]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
                     },
-                    ['police2'] = {        -- Car/Helicopter/Vehicle Spawn Code/Model Name
-                        label = 'Police Cruiser #2',
-                        category = 'land', -- Options are 'land' and 'air'
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
                     },
-                    ['polmav'] = {         -- Car/Helicopter/Vehicle Spawn Code/Model Name
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                },
+
+                [3] = { -- [Corporal]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
+                    },
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
+                    },
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                    ['nkvigero2'] = {
+                        label = 'Police Vigero2',
+                        category = 'land',
+                    },
+                },
+
+                [4] = { -- [Major]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
+                    },
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
+                    },
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                    ['nkvigero2'] = {
+                        label = 'Police Vigero2',
+                        category = 'land',
+                    },
+                    ['nkcavalcade3'] = {
+                        label = 'Police Cavalcade3',
+                        category = 'land',
+                    },
+                    ['polmav'] = {
                         label = 'Maverick',
-                        category = 'air',  -- Options are 'land' and 'air'
+                        category = 'air',
+                    },
+                },
+
+                [5] = { -- [Lieutenant Colonel]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
+                    },
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
+                    },
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                    ['nkvigero2'] = {
+                        label = 'Police Vigero2',
+                        category = 'land',
+                    },
+                    ['nkcavalcade3'] = {
+                        label = 'Police Cavalcade3',
+                        category = 'land',
+                    },
+                    ['nkcomet6'] = {
+                        label = 'Police Comet6',
+                        category = 'land',
+                    },
+                    ['polmav'] = {
+                        label = 'Maverick',
+                        category = 'air',
+                    },
+                },
+
+                [6] = { -- [Colonel]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
+                    },
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
+                    },
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                    ['nkvigero2'] = {
+                        label = 'Police Vigero2',
+                        category = 'land',
+                    },
+                    ['nkcavalcade3'] = {
+                        label = 'Police Cavalcade3',
+                        category = 'land',
+                    },
+                    ['nkcomet6'] = {
+                        label = 'Police Comet6',
+                        category = 'land',
+                    },
+                    ['polmav'] = {
+                        label = 'Maverick',
+                        category = 'air',
+                    },
+                },
+
+                [7] = { -- [Under Sheriff]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
+                    },
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
+                    },
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                    ['nkvigero2'] = {
+                        label = 'Police Vigero2',
+                        category = 'land',
+                    },
+                    ['nkcavalcade3'] = {
+                        label = 'Police Cavalcade3',
+                        category = 'land',
+                    },
+                    ['nkcomet6'] = {
+                        label = 'Police Comet6',
+                        category = 'land',
+                    },
+                    ['polmav'] = {
+                        label = 'Maverick',
+                        category = 'air',
+                    },
+                },
+
+                [8] = { -- [Sheriff]
+                    ['nkstanier'] = {
+                        label = 'Police Stanier',
+                        category = 'land',
+                    },
+                    ['nkbuffalos'] = {
+                        label = 'Police Buffalo',
+                        category = 'land',
+                    },
+                    ['nkscout2020'] = {
+                        label = 'Police Scout',
+                        category = 'land',
+                    },
+                    ['nktorrence'] = {
+                        label = 'Police Torrence',
+                        category = 'land',
+                    },
+                    ['nkaleutian'] = {
+                        label = 'Police Aleutian',
+                        category = 'land',
+                    },
+                    ['nkstx'] = {
+                        label = 'Police STX',
+                        category = 'land',
+                    },
+                    ['nkbison'] = {
+                        label = 'Police Bison',
+                        category = 'land',
+                    },
+                    ['nkgranger2'] = {
+                        label = 'Police Granger2',
+                        category = 'land',
+                    },
+                    ['nkvigero2'] = {
+                        label = 'Police Vigero2',
+                        category = 'land',
+                    },
+                    ['nkcavalcade3'] = {
+                        label = 'Police Cavalcade3',
+                        category = 'land',
+                    },
+                    ['nkcomet6'] = {
+                        label = 'Police Comet6',
+                        category = 'land',
+                    },
+                    ['polmav'] = {
+                        label = 'Maverick',
+                        category = 'air',
                     },
                 },
             }
