@@ -530,29 +530,37 @@ Config.Locations = {
                 [0] = {                                                                                  -- Grade number will be the name of each table(this would be grade 0)
                     { name = 'WEAPON_PISTOL_MK2',     label = 'PD Pistol',      multiple = false, price = 0 }, -- Set price to false if undesired
                     { name = 'WEAPON_NIGHTSTICK', label = 'Night Stick', multiple = false, price = 0 },
+                    { name = 'WEAPON_STUNGUN', label = 'Taser X2 ', multiple = false, price = 0 },
                     { name = 'ammo-9' , label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
+                    { name = 'taser_cartridge', label = 'Taser Cartidge', multiple = true, price = 0 },
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                 },
                 [1] = { -- This would be grade 1
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
                     { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 0 },
+                    { name = 'WEAPON_STUNGUN', label = 'Taser X2 ', multiple = false, price = 0 },
                     { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 },
+                    { name = 'taser_cartridge', label = 'Taser Cartidge', multiple = true, price = 0 },
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                 },
                 [2] = { -- This would be grade 2
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
                     { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 0 },
+                    { name = 'WEAPON_STUNGUN', label = 'Taser X2 ', multiple = false, price = 0 },
                     { name = 'WEAPON_CARBINERIFLE_MK2', label = 'PD AR', multiple = false, price = 0 },
                     { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
                     { name = 'ammo-rifle2', label = '7.62 Ammo', multiple = true, price = 0 }, -- Example
+                    { name = 'taser_cartridge', label = 'Taser Cartidge', multiple = true, price = 0 },
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 }, -- Example
                 },
                 [3] = { -- This would be grade 3
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
                     { name = 'WEAPON_NIGHTSTICK',   label = 'Night Stick',   multiple = false, price = 0 },
+                    { name = 'WEAPON_STUNGUN', label = 'Taser X2 ', multiple = false, price = 0 },
                     { name = 'WEAPON_CARBINERIFLE_MK2', label = 'PD AR', multiple = false, price = 0 },
-                    { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
                     { name = 'ammo-rifle2', label = '7.62 Ammo', multiple = true, price = 0 },
+                    { name = 'ammo-9', label = '9mm Ammo', multiple = true, price = 0 }, -- Set multiple to true if you want ability to purchase more than one at a time
+                    { name = 'taser_cartridge', label = 'Taser Cartidge', multiple = true, price = 0 },
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                 },
             }
