@@ -970,45 +970,91 @@ Config.Locations = {
             label = '[E] - Change Clothes',        -- String of text ui of cloakroom
             range = 1.5,                           -- Range away from coords you can use.
             uniforms = {                           -- Uniform choices
-                [1] = {                            -- Order it will display
-                    label = 'Patrol',              -- Name of outfit that will display in menu
-                    minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
-                    male = {                       -- Male variation
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 55, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 143, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 19, texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    },
-                    female = {
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 4,  texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 25, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 16, texture = 4 }, -- Shoes
-                            { component = 3,  drawable = 4,  texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    }
+            [1] = {                            -- Order it will display
+            label = 'Patrol',              -- Name of outfit that will display in menu
+            minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
+            male = {                       -- Male variation
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 555, texture = 0 }, -- Torso (main shirt)
+                    { component = 4,  drawable = 204, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 111, texture = 0 }, -- Shoes
+                    { component = 3,  drawable = 39, texture = 0 }, -- Arms
+                    { component = 9,  drawable = 80, texture = 0 }, -- Body Armour (vest/no vest)
+                    { component = 8,  drawable = 250, texture = 1 }, -- Undershirt (taser)
+                    { component = 7,  drawable = 213, texture = 0 }, -- Scarfs/chains
+                    
                 },
-                [2] = {              -- Order it will display
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    { component = 0, drawable = 223, texture = 0 }, -- Hats
+                    --{ component = 0, drawable = 223, texture = 0 }, -- Glasses
+                }
+            },
+            female = {
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 4,  texture = 0 }, -- Torso
+                    { component = 8,  drawable = 15, texture = 0 }, -- Shirt
+                    { component = 4,  drawable = 25, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 16, texture = 4 }, -- Shoes
+                    { component = 3,  drawable = 4,  texture = 0 }, -- Arms
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                }
+            }
+        },
+        [2] = {                            -- Order it will display
+            label = 'Patrol 2',              -- Name of outfit that will display in menu
+            minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
+            male = {                       -- Male variation
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 555, texture = 0 }, -- Torso (main shirt)
+                    { component = 4,  drawable = 204, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 111, texture = 0 }, -- Shoes
+                    { component = 3,  drawable = 39, texture = 0 }, -- Arms
+                    { component = 9,  drawable = 65, texture = 0 }, -- Body Armour (vest/no vest)
+                    { component = 8,  drawable = 253, texture = 0 }, -- Undershirt (taser)
+                    { component = 7,  drawable = 213, texture = 0 }, -- Scarfs/chains
+                    
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    { component = 0, drawable = 223, texture = 0 }, -- Hats
+                    --{ component = 0, drawable = 223, texture = 0 }, -- Glasses
+                }
+            },
+            female = {
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 4,  texture = 0 }, -- Torso
+                    { component = 8,  drawable = 15, texture = 0 }, -- Shirt
+                    { component = 4,  drawable = 25, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 16, texture = 4 }, -- Shoes
+                    { component = 3,  drawable = 4,  texture = 0 }, -- Arms
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                }
+            }
+        },
+                [3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -1046,7 +1092,7 @@ Config.Locations = {
                         }
                     }
                 },
-                [3] = {              -- Order it will display
+                [4] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -1620,45 +1666,91 @@ Config.Locations = {
             label = '[E] - Change Clothes',        -- String of text ui of cloakroom
             range = 1.5,                           -- Range away from coords you can use.
             uniforms = {                           -- Uniform choices
-                [1] = {                            -- Order it will display
-                    label = 'Patrol',              -- Name of outfit that will display in menu
-                    minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
-                    male = {                       -- Male variation
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 55, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 143, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 19, texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    },
-                    female = {
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 4,  texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 25, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 16, texture = 4 }, -- Shoes
-                            { component = 3,  drawable = 4,  texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    }
+            [1] = {                            -- Order it will display
+            label = 'Patrol',              -- Name of outfit that will display in menu
+            minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
+            male = {                       -- Male variation
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 555, texture = 0 }, -- Torso (main shirt)
+                    { component = 4,  drawable = 204, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 111, texture = 0 }, -- Shoes
+                    { component = 3,  drawable = 39, texture = 0 }, -- Arms
+                    { component = 9,  drawable = 80, texture = 0 }, -- Body Armour (vest/no vest)
+                    { component = 8,  drawable = 250, texture = 1 }, -- Undershirt (taser)
+                    { component = 7,  drawable = 213, texture = 0 }, -- Scarfs/chains
+                    
                 },
-                [2] = {              -- Order it will display
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    { component = 0, drawable = 223, texture = 0 }, -- Hats
+                    --{ component = 0, drawable = 223, texture = 0 }, -- Glasses
+                }
+            },
+            female = {
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 4,  texture = 0 }, -- Torso
+                    { component = 8,  drawable = 15, texture = 0 }, -- Shirt
+                    { component = 4,  drawable = 25, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 16, texture = 4 }, -- Shoes
+                    { component = 3,  drawable = 4,  texture = 0 }, -- Arms
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                }
+            }
+        },
+        [2] = {                            -- Order it will display
+            label = 'Patrol 2',              -- Name of outfit that will display in menu
+            minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
+            male = {                       -- Male variation
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 555, texture = 0 }, -- Torso (main shirt)
+                    { component = 4,  drawable = 204, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 111, texture = 0 }, -- Shoes
+                    { component = 3,  drawable = 39, texture = 0 }, -- Arms
+                    { component = 9,  drawable = 65, texture = 0 }, -- Body Armour (vest/no vest)
+                    { component = 8,  drawable = 253, texture = 0 }, -- Undershirt (taser)
+                    { component = 7,  drawable = 213, texture = 0 }, -- Scarfs/chains
+                    
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    { component = 0, drawable = 223, texture = 0 }, -- Hats
+                    --{ component = 0, drawable = 223, texture = 0 }, -- Glasses
+                }
+            },
+            female = {
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 4,  texture = 0 }, -- Torso
+                    { component = 8,  drawable = 15, texture = 0 }, -- Shirt
+                    { component = 4,  drawable = 25, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 16, texture = 4 }, -- Shoes
+                    { component = 3,  drawable = 4,  texture = 0 }, -- Arms
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                }
+            }
+        },
+                [3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -1696,7 +1788,7 @@ Config.Locations = {
                         }
                     }
                 },
-                [3] = {              -- Order it will display
+                [4] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -1962,82 +2054,90 @@ Config.Locations = {
             label = '[E] - Change Clothes',        -- String of text ui of cloakroom
             range = 1.5,                           -- Range away from coords you can use.
             uniforms = {                           -- Uniform choices
-                [1] = {                            -- Order it will display
-                    label = 'Patrol',              -- Name of outfit that will display in menu
-                    minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
-                    male = {                       -- Male variation
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 55, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 143, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 19, texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    },
-                    female = {
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 4,  texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 25, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 16, texture = 4 }, -- Shoes
-                            { component = 3,  drawable = 4,  texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    }
+            [1] = {                            -- Order it will display
+            label = 'Patrol',              -- Name of outfit that will display in menu
+            minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
+            male = {                       -- Male variation
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 555, texture = 0 }, -- Torso (main shirt)
+                    { component = 4,  drawable = 204, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 111, texture = 0 }, -- Shoes
+                    { component = 3,  drawable = 39, texture = 0 }, -- Arms
+                    { component = 9,  drawable = 80, texture = 0 }, -- Body Armour (vest/no vest)
+                    { component = 8,  drawable = 250, texture = 1 }, -- Undershirt (taser)
+                    { component = 7,  drawable = 213, texture = 0 }, -- Scarfs/chains
+                    
                 },
-                [2] = {              -- Order it will display
-                    label = 'Chief', -- Name of outfit that will display in menu
-                    minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
-                    male = {         -- Male variation
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 15, texture = 0 }, -- Torso
-                            { component = 8,  drawable = 58, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 35, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 24, texture = 0 }, -- Shoes
-                            { component = 3,  drawable = 15, texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
 
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    },
-                    female = {
-                        clothing = {
-                            -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
-                            -- https://docs.fivem.net/natives/?_0xD4F7B05C
-                            { component = 11, drawable = 4,  texture = 0 }, -- Torso
-                            { component = 8,  drawable = 15, texture = 0 }, -- Shirt
-                            { component = 4,  drawable = 25, texture = 0 }, -- Pants
-                            { component = 6,  drawable = 16, texture = 4 }, -- Shoes
-                            { component = 3,  drawable = 4,  texture = 0 }, -- Arms
-                        },
-                        props = {
-                            -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
-                            -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
-
-                            --    { component = 0, drawable = 0, texture = 0 }, -- Hats
-                        }
-                    }
+                    { component = 0, drawable = 223, texture = 0 }, -- Hats
+                    --{ component = 0, drawable = 223, texture = 0 }, -- Glasses
+                }
+            },
+            female = {
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 4,  texture = 0 }, -- Torso
+                    { component = 8,  drawable = 15, texture = 0 }, -- Shirt
+                    { component = 4,  drawable = 25, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 16, texture = 4 }, -- Shoes
+                    { component = 3,  drawable = 4,  texture = 0 }, -- Arms
                 },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                }
+            }
+        },
+        [2] = {                            -- Order it will display
+            label = 'Patrol 2',              -- Name of outfit that will display in menu
+            minGrade = 0,                  -- Min grade level that can access? Set to 0 or false for everyone to use
+            male = {                       -- Male variation
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 555, texture = 0 }, -- Torso (main shirt)
+                    { component = 4,  drawable = 204, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 111, texture = 0 }, -- Shoes
+                    { component = 3,  drawable = 39, texture = 0 }, -- Arms
+                    { component = 9,  drawable = 65, texture = 0 }, -- Body Armour (vest/no vest)
+                    { component = 8,  drawable = 253, texture = 0 }, -- Undershirt (taser)
+                    { component = 7,  drawable = 213, texture = 0 }, -- Scarfs/chains
+                    
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    { component = 0, drawable = 223, texture = 0 }, -- Hats
+                    --{ component = 0, drawable = 223, texture = 0 }, -- Glasses
+                }
+            },
+            female = {
+                clothing = {
+                    -- Components / 0: Face 1: Mask 2: Hair 3: Torso 4: Leg 5: Parachute / bag 6: Shoes 7: Accessory 8: Undershirt 9: Kevlar 10: Badge 11: Torso 2
+                    -- https://docs.fivem.net/natives/?_0xD4F7B05C
+                    { component = 11, drawable = 4,  texture = 0 }, -- Torso
+                    { component = 8,  drawable = 15, texture = 0 }, -- Shirt
+                    { component = 4,  drawable = 25, texture = 0 }, -- Pants
+                    { component = 6,  drawable = 16, texture = 4 }, -- Shoes
+                    { component = 3,  drawable = 4,  texture = 0 }, -- Arms
+                },
+                props = {
+                    -- Components / 0: Hats 1: Glasses 2: Ears 6: Watches 7: Bracelets
+                    -- https://docs.fivem.net/natives/?_0x93376B65A266EB5F
+
+                    --    { component = 0, drawable = 0, texture = 0 }, -- Hats
+                }
+            }
+        },
                 [3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
