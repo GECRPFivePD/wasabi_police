@@ -72,7 +72,8 @@ impoundSuccessful = function(vehicle)
     if Config.AdvancedParking then
         exports['AdvancedParking']:DeleteVehicleOnServer(vehicle, nil, nil)
     else
-        DeleteVehicle(vehicle)
+        --DeleteVehicle(vehicle)
+        TriggerEvent("jg-advancedgarages:client:show-impound-form")
     end
     if not DoesEntityExist(vehicle) then
         TriggerEvent('wasabi_bridge:notify', Strings.success, Strings.car_impounded_desc, 'success')
