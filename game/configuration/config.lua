@@ -666,7 +666,7 @@ Config.Locations = {
                         }
                     }
                 },
-                [3] = {              -- Order it will display
+               --[[ [3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -741,7 +741,7 @@ Config.Locations = {
                             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
                         }
                     }
-                },
+                },]]
             }
         },
 
@@ -1054,7 +1054,7 @@ Config.Locations = {
                 }
             }
         },
-                [3] = {              -- Order it will display
+              --[[ [3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -1129,7 +1129,7 @@ Config.Locations = {
                             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
                         }
                     }
-                },
+                },]]
             }
         },
 
@@ -1750,7 +1750,7 @@ Config.Locations = {
                 }
             }
         },
-                [3] = {              -- Order it will display
+                --[[[3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -1825,7 +1825,7 @@ Config.Locations = {
                             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
                         }
                     }
-                },
+                },]]
             }
         },
 
@@ -2138,7 +2138,7 @@ Config.Locations = {
                 }
             }
         },
-                [3] = {              -- Order it will display
+                --[[[3] = {              -- Order it will display
                     label = 'Chief', -- Name of outfit that will display in menu
                     minGrade = 0,    -- Min grade level that can access? Set to 0 or false for everyone to use
                     male = {         -- Male variation
@@ -2175,7 +2175,7 @@ Config.Locations = {
                             --    { component = 0, drawable = 0, texture = 0 }, -- Hats
                         }
                     }
-                },
+                },]]
             }
         },
 
