@@ -537,6 +537,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },  
                 },
                 [1] = { -- This would be grade 1
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -547,6 +548,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [2] = { -- This would be grade 2
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -559,6 +561,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 }, -- Example
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [3] = { -- This would be grade 3
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -571,6 +574,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
             }
         },
@@ -925,6 +929,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [1] = { -- This would be grade 1
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -935,6 +940,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [2] = { -- This would be grade 2
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -947,6 +953,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 }, -- Example
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [3] = { -- This would be grade 3
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -959,6 +966,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
             }
         },
@@ -1621,6 +1629,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [1] = { -- This would be grade 1
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -1631,6 +1640,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [2] = { -- This would be grade 2
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -1643,6 +1653,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 }, -- Example
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [3] = { -- This would be grade 3
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -1655,6 +1666,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
             }
         },
@@ -2009,6 +2021,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [1] = { -- This would be grade 1
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -2019,6 +2032,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [2] = { -- This would be grade 2
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -2031,6 +2045,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 }, -- Example
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
                 [3] = { -- This would be grade 3
                     { name = 'WEAPON_PISTOL_MK2', label = 'PD Pistol', multiple = false, price = 0 },
@@ -2043,6 +2058,7 @@ Config.Locations = {
                     { name = 'armour', label = 'Bulletproof Vest', multiple = false, price = 0 },
                     { name = 'WEAPON_FLASHLIGHT', label = 'Flashlight', multiple = false, price = 0 },
                     { name = 'uvlight', label = 'UV Light', multiple = false, price = 0 },
+                    { name = 'alcoholmeter', label = 'PBT', multiple = false, price = 0 },
                 },
             }
         },
