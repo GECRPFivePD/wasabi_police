@@ -112,7 +112,7 @@ Strings = {
     suspect_died_escort_desc = 'The suspect died while escorting and you dropped them.',
 
 
-    stop_escorting_interact = '[E] - Stop Escorting',
+    stop_escorting_interact = '[X] - Stop Escorting',
     cant_wield = 'Cannot Equip',
     cant_wield_desc = 'You cannot use this at this time!',
 

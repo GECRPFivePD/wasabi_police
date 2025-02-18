@@ -770,7 +770,7 @@ RegisterCommand('+escortinggs', function()
     escortingss = true
 end, false)
 
-RegisterKeyMapping('+escortinggs', 'Stop Escorting', 'keyboard', 'E')
+RegisterKeyMapping('+escortinggs', 'Stop Escorting', 'keyboard', 'X')
 
 
 -- Being escorted loop
