@@ -9,6 +9,7 @@ RadarPostProp, ClosestSpeedTrap, SpeedTraps, JailTime, InJail = nil, nil, {}, 0,
 CCTVCameras = {}
 OnlinePoliceCount = 0
 local oldJob = nil
+local escortingss = false
 if wsb.framework == 'qb' then QBCore = exports['qb-core']:GetCoreObject() end
 
 
@@ -734,7 +735,9 @@ CreateThread(function()
                 TriggerEvent('wasabi_bridge:notify', Strings.cant_wield, Strings.cant_wield_desc, 'error')
                 SetCurrentPedWeapon(wsb.cache.ped, `WEAPON_UNARMED`, false)
             end
-            if IsControlJustReleased(0, 38) or IsDisabledControlJustReleased(0, 38) or IsPedRagdoll(wsb.cache.ped) then
+            --if IsControlJustReleased(0, 38) or IsDisabledControlJustReleased(0, 38) or IsPedRagdoll(wsb.cache.ped) then
+            if escortingss then
+                escortingss = false
                 alrEscorting = nil
                 escorting.active = nil
                 ClearPedTasks(wsb.cache.ped)
@@ -761,6 +764,14 @@ CreateThread(function()
         Wait(sleep)
     end
 end)
+
+-- Added by Dooms
+RegisterCommand('+escortinggs', function()
+    escortingss = true
+end, false)
+
+RegisterKeyMapping('+escortinggs', 'Stop Escorting', 'keyboard', 'E')
+
 
 -- Being escorted loop
 CreateThread(function()
